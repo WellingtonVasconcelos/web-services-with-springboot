@@ -10,7 +10,7 @@ import javax.persistence.Id;
 
 
 @Entity
-public class User implements Serializable {
+public class Person implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -21,10 +21,10 @@ public class User implements Serializable {
 	private String phone;
 	private String password;
 
-	public User() {
+	public Person() {
 	}
 
-	public User(Long id, String name, String email, String phone, String password) {
+	public Person(Long id, String name, String email, String phone, String password) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -89,7 +89,7 @@ public class User implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		User other = (User) obj;
+		Person other = (Person) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;
