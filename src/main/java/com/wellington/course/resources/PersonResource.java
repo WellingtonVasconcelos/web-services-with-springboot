@@ -10,7 +10,7 @@ import com.wellington.course.entities.Person;
 
 @RestController
 @RequestMapping(value = "/users")
-public class UserResource {
+public class PersonResource {
 
 	@GetMapping
 	public ResponseEntity<Person> findAll() {
